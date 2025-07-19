@@ -73,6 +73,10 @@ body.modal-open {
     overflow: hidden;
 }
 
+.center-div {
+    justify-content: center;
+}
+
 header > .collapsible-header{
     display: flex;
     gap: 1rem;
