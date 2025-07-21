@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="tw-dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -310,6 +310,584 @@
         }
       }
 
+      .currency-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .crypto-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 15px;
+        padding: 1.5rem;
+        color: white;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .crypto-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .fee-card {
+        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        border-radius: 20px;
+        padding: 2rem;
+        color: white;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .fee-card:hover {
+        transform: scale(1.05);
+      }
+
+      .benefit-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 2rem;
+        color: white;
+      }
+
+      .step-number {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        margin: 0 auto 1rem;
+      }
+
+      /* Custom Grid for Currency Cards */
+      .currency-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      /* Currency Card Styling */
+      .currency-card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        border: 1px solid #e5e7eb;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .currency-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .tw-dark .currency-card {
+        background: #1f2937;
+        border-color: #374151;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .tw-dark .currency-card:hover {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      }
+
+      .currency-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .currency-usd {
+        background: linear-gradient(135deg, #10b981, #059669);
+        color: white;
+      }
+      .currency-eur {
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: white;
+      }
+      .currency-gbp {
+        background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        color: white;
+      }
+      .currency-inr {
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        color: white;
+      }
+      .currency-sar {
+        background: linear-gradient(135deg, #059669, #047857);
+        color: white;
+      }
+      .currency-cad {
+        background: linear-gradient(135deg, #dc2626, #b91c1c);
+        color: white;
+      }
+      .currency-aed {
+        background: linear-gradient(135deg, #eab308, #ca8a04);
+        color: white;
+      }
+
+      /* Crypto Card Styling */
+      .crypto-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 20px;
+        padding: 2rem;
+        color: white;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .crypto-card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 25px 50px rgba(102, 126, 234, 0.3);
+      }
+
+      .crypto-card-tether {
+        background: linear-gradient(135deg, #26a69a 0%, #00acc1 100%);
+      }
+
+      .crypto-card-solana {
+        background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+      }
+
+      .crypto-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      /* Features Section */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .feature-card {
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .feature-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        font-size: 2rem;
+        color: white;
+        transition: all 0.3s ease;
+      }
+
+      .feature-card:hover .feature-icon {
+        transform: scale(1.1);
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+      }
+
+      /* Fee Cards */
+      .fee-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .fee-card {
+        background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        border-radius: 20px;
+        padding: 2.5rem;
+        color: white;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .fee-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 40px rgba(17, 153, 142, 0.3);
+      }
+
+      .fee-card-secondary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      .fee-card-tertiary {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      }
+
+      /* Benefits Section */
+      .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .benefit-card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid #e5e7eb;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .benefit-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      }
+
+      .tw-dark .benefit-card {
+        background: #1f2937;
+        border-color: #374151;
+      }
+
+      .benefit-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 1.5rem;
+      }
+
+      .benefit-security {
+        background: #fee2e2;
+        color: #dc2626;
+      }
+      .benefit-time {
+        background: #dbeafe;
+        color: #2563eb;
+      }
+      .benefit-speed {
+        background: #d1fae5;
+        color: #059669;
+      }
+      .benefit-tools {
+        background: #e9d5ff;
+        color: #7c3aed;
+      }
+
+      .tw-dark .benefit-security {
+        background: #7f1d1d;
+        color: #fca5a5;
+      }
+      .tw-dark .benefit-time {
+        background: #1e3a8a;
+        color: #93c5fd;
+      }
+      .tw-dark .benefit-speed {
+        background: #064e3b;
+        color: #6ee7b7;
+      }
+      .tw-dark .benefit-tools {
+        background: #581c87;
+        color: #c4b5fd;
+      }
+
+      /* How It Works */
+      .steps-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .step-card {
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .step-number {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        margin: 0 auto 1rem;
+        box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+      }
+
+      /* Join Future Section */
+      .future-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .future-card {
+        text-align: center;
+        padding: 1.5rem;
+      }
+
+      .future-emoji {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        display: block;
+      }
+
+      /* Section Containers */
+      .section {
+        padding: 5rem 1rem;
+      }
+
+      .section-alt {
+        background: #f9fafb;
+      }
+
+      .tw-dark .section-alt {
+        background: #111827;
+      }
+
+      .section-gradient {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+
+      .section-fees {
+        background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 100%);
+      }
+
+      .tw-dark .section-fees {
+        background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .mb-16 {
+        margin-bottom: 4rem;
+      }
+
+      .mb-12 {
+        margin-bottom: 3rem;
+      }
+
+      .mb-8 {
+        margin-bottom: 2rem;
+      }
+
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+
+      .mb-3 {
+        margin-bottom: 0.75rem;
+      }
+
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Typography */
+      .title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        line-height: 1.1;
+      }
+
+      .subtitle {
+        font-size: 1.25rem;
+        color: #6b7280;
+        max-width: 768px;
+        margin: 0 auto;
+      }
+
+      .tw-dark .subtitle {
+        color: #9ca3af;
+      }
+
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+      }
+
+      .card-subtitle {
+        font-size: 0.875rem;
+        color: #6b7280;
+        margin-bottom: 1rem;
+      }
+
+      .tw-dark .card-subtitle {
+        color: #9ca3af;
+      }
+
+      .card-text {
+        color: #374151;
+        line-height: 1.6;
+      }
+
+      .tw-dark .card-text {
+        color: #d1d5db;
+      }
+
+      .comparison-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .comparison-card {
+        padding: 2rem;
+        border-radius: 12px;
+      }
+
+      .comparison-bad {
+        background: #fef2f2;
+        border: 1px solid #fecaca;
+      }
+
+      .comparison-good {
+        background: #f0fdf4;
+        border: 1px solid #bbf7d0;
+      }
+
+      .tw-dark .comparison-bad {
+        background: rgba(127, 29, 29, 0.2);
+        border-color: #7f1d1d;
+      }
+
+      .tw-dark .comparison-good {
+        background: rgba(6, 78, 59, 0.2);
+        border-color: #064e3b;
+      }
+
+      .comparison-title {
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .comparison-bad .comparison-title {
+        color: #dc2626;
+      }
+
+      .comparison-good .comparison-title {
+        color: #059669;
+      }
+
+      .tw-dark .comparison-bad .comparison-title {
+        color: #fca5a5;
+      }
+
+      .tw-dark .comparison-good .comparison-title {
+        color: #6ee7b7;
+      }
+
+      .comparison-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .comparison-list li {
+        padding: 0.25rem 0;
+        color: #374151;
+      }
+
+      .tw-dark .comparison-list li {
+        color: #d1d5db;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: white;
+        color: #2563eb;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .cta-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .title {
+          font-size: 2rem;
+        }
+
+        .section {
+          padding: 3rem 1rem;
+        }
+
+        .comparison-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .currency-grid,
+        .crypto-grid,
+        .features-grid,
+        .fee-grid,
+        .benefits-grid,
+        .steps-grid,
+        .future-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Animation */
+      .reveal-up {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: revealUp 0.8s ease forwards;
+      }
+
+      @keyframes revealUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
       @media not all and (min-width: 1024px) {
         header .collapsible-header {
           position: fixed;
@@ -360,7 +938,6 @@
             class="tw-object-contain tw-h-full tw-w-full dark:tw-invert"
           />
         </div>
-        <!-- <span class="tw-uppercase tw-text-base tw-font-medium">GTP Bank</span> -->
       </a>
       <div
         class="collapsible-header animated-collapse max-lg:tw-shadow-md"
@@ -509,7 +1086,7 @@
             title="toggle-theme"
             id="theme-toggle"
           >
-            <i class="bi bi-sun" id="toggle-mode-icon"></i>
+            <!-- <i class="bi bi-sun" id="toggle-mode-icon"></i> -->
           </button>
           <a
             href="#contact"
@@ -529,6 +1106,7 @@
       ></button>
     </header>
 
+    <!-- Hero Section with Updated Content -->
     <section
       class="hero-section tw-relative tw-mt-20 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-mt-[100px]"
       id="hero-section"
@@ -550,17 +1128,19 @@
           <h1
             class="reveal-up tw-text-center tw-text-7xl tw-font-semibold tw-uppercase tw-leading-[90px] max-lg:tw-text-4xl max-md:tw-leading-snug"
           >
-            <span class=""> The Future of </span>
+            <span class="tw-text-blue-600"> Revolutionary </span>
+            <span class=""> Digital </span>
             <br />
-            <span class="tw-font-thin tw-font-serif"> Digital Banking </span>
+            <span class="tw-font-thin tw-font-serif"> Banking with GTP </span>
           </h1>
 
           <div
-            class="reveal-up tw-mt-8 tw-max-w-[550px] tw-text-lg max-lg:tw-text-base tw-p-2 tw-text-center tw-text-gray-800 dark:tw-text-white max-lg:tw-max-w-full"
+            class="reveal-up tw-mt-8 tw-max-w-[650px] tw-text-lg max-lg:tw-text-base tw-p-2 tw-text-center tw-text-gray-800 dark:tw-text-white max-lg:tw-max-w-full"
           >
-            From farms to markets, oceans to tables, enjoy instant borderless
-            payments in multiple currencies and <br />
-            crypto, saving time, cost, effort.
+            Welcome to the future of banking. GTP Digital Financial Solutions
+            transforms how you handle money across borders and currencies. Our
+            platform combines cutting-edge technology with unprecedented
+            convenience. Experience banking without boundaries.
           </div>
 
           <div
@@ -595,6 +1175,7 @@
       </div>
     </section>
 
+    <!-- Trusted by section -->
     <section
       class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
     >
@@ -653,6 +1234,616 @@
               class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
               srcset=""
             />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Top 7 Fiat Currencies Section -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="title reveal-up">Top 7 Fiat Currencies Supported</h2>
+          <p class="subtitle reveal-up">
+            Trade seamlessly in the world's most trusted currencies with
+            real-time exchange rates and instant conversions.
+          </p>
+        </div>
+
+        <div class="currency-grid reveal-up">
+          <div class="currency-card">
+            <div class="currency-icon currency-usd">$</div>
+            <div>
+              <h3 class="card-title">USD</h3>
+              <p class="card-subtitle">United States Dollar</p>
+            </div>
+            <p class="card-text">
+              The world's primary reserve currency, enabling global trade and
+              commerce with unmatched liquidity.
+            </p>
+          </div>
+
+          <div class="currency-card">
+            <div class="currency-icon currency-eur">€</div>
+            <div>
+              <h3 class="card-title">EUR</h3>
+              <p class="card-subtitle">Euro</p>
+            </div>
+            <p class="card-text">
+              The official currency of 19 European Union countries, facilitating
+              seamless European trade.
+            </p>
+          </div>
+
+          <div class="currency-card">
+            <div class="currency-icon currency-gbp">£</div>
+            <div>
+              <h3 class="card-title">GBP</h3>
+              <p class="card-subtitle">British Pound</p>
+            </div>
+            <p class="card-text">
+              One of the oldest currencies still in use, essential for UK and
+              Commonwealth trade.
+            </p>
+          </div>
+
+          <div class="currency-card">
+            <div class="currency-icon currency-inr">₹</div>
+            <div>
+              <h3 class="card-title">INR</h3>
+              <p class="card-subtitle">Indian Rupee</p>
+            </div>
+            <p class="card-text">
+              The currency of the world's largest democracy and fastest-growing
+              major economy.
+            </p>
+          </div>
+
+          <div class="currency-card">
+            <div class="currency-icon currency-sar">﷼</div>
+            <div>
+              <h3 class="card-title">SAR</h3>
+              <p class="card-subtitle">Saudi Riyal</p>
+            </div>
+            <p class="card-text">
+              The currency of Saudi Arabia, crucial for Middle Eastern energy
+              and trade markets.
+            </p>
+          </div>
+
+          <div class="currency-card">
+            <div class="currency-icon currency-cad">C$</div>
+            <div>
+              <h3 class="card-title">CAD</h3>
+              <p class="card-subtitle">Canadian Dollar</p>
+            </div>
+            <p class="card-text">
+              A major commodity currency, perfect for natural resources and
+              North American trade.
+            </p>
+          </div>
+
+          <div class="currency-card">
+            <div class="currency-icon currency-aed">د.إ</div>
+            <div>
+              <h3 class="card-title">AED</h3>
+              <p class="card-subtitle">UAE Dirham</p>
+            </div>
+            <p class="card-text">
+              The currency of the UAE, a hub for international business and
+              trade in the Middle East.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top 10 Cryptocurrencies Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="title reveal-up">Top 10 Cryptocurrencies Supported</h2>
+          <p class="subtitle reveal-up">
+            Access the most popular digital assets with secure storage, instant
+            conversions, and real-time market data.
+          </p>
+        </div>
+
+        <div class="crypto-grid reveal-up">
+          <div class="crypto-card">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <div
+                style="
+                  width: 48px;
+                  height: 48px;
+                  background: #f97316;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i class="bi bi-currency-bitcoin" style="font-size: 1.5rem"></i>
+              </div>
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin: 0">
+                  Bitcoin (BTC)
+                </h3>
+                <p style="margin: 0; opacity: 0.9">Digital Gold</p>
+              </div>
+            </div>
+            <p style="opacity: 0.9; line-height: 1.6">
+              The original cryptocurrency that started the digital revolution.
+              Highest market cap and adoption rate.
+            </p>
+          </div>
+
+          <div class="crypto-card crypto-card-tether">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <div
+                style="
+                  width: 48px;
+                  height: 48px;
+                  background: #059669;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <span style="font-size: 1.25rem; font-weight: 700">₮</span>
+              </div>
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin: 0">
+                  Tether (USDT)
+                </h3>
+                <p style="margin: 0; opacity: 0.9">Stable Value</p>
+              </div>
+            </div>
+            <p style="opacity: 0.9; line-height: 1.6">
+              The leading stablecoin pegged to the US dollar. Perfect for
+              traders seeking stability.
+            </p>
+          </div>
+
+          <div class="crypto-card crypto-card-solana">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 1rem;
+              "
+            >
+              <div
+                style="
+                  width: 48px;
+                  height: 48px;
+                  background: #7c3aed;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <span style="font-size: 1.25rem; font-weight: 700">◎</span>
+              </div>
+              <div>
+                <h3 style="font-size: 1.25rem; font-weight: 700; margin: 0">
+                  Solana (SOL)
+                </h3>
+                <p style="margin: 0; opacity: 0.9">Ultra Fast</p>
+              </div>
+            </div>
+            <p style="opacity: 0.9; line-height: 1.6">
+              Ultra-fast blockchain with minimal fees. Ideal for decentralized
+              applications and NFTs.
+            </p>
+          </div>
+        </div>
+
+        <div class="currency-card text-center reveal-up">
+          <h3 class="card-title mb-4">And More...</h3>
+          <p class="card-text mb-6">
+            Ethereum, Binance Coin, XRP, Cardano, Dogecoin, Polkadot, and USD
+            Coin also supported.
+          </p>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+              gap: 1rem;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                background: #f3f4f6;
+                padding: 0.75rem;
+                border-radius: 8px;
+              "
+            >
+              <span style="font-size: 1.5rem">Ξ</span>
+              <span style="font-weight: 500">Ethereum</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                background: #f3f4f6;
+                padding: 0.75rem;
+                border-radius: 8px;
+              "
+            >
+              <span style="font-size: 1.5rem">⬡</span>
+              <span style="font-weight: 500">Binance Coin</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                background: #f3f4f6;
+                padding: 0.75rem;
+                border-radius: 8px;
+              "
+            >
+              <span style="font-size: 1.5rem">✕</span>
+              <span style="font-weight: 500">XRP</span>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                background: #f3f4f6;
+                padding: 0.75rem;
+                border-radius: 8px;
+              "
+            >
+              <span style="font-size: 1.5rem">₳</span>
+              <span style="font-weight: 500">Cardano</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unique Features Section -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="title reveal-up">
+            GTP Digital Financial Solutions: Unique Features
+          </h2>
+          <p class="subtitle reveal-up">
+            Experience banking that's designed for the future, with features
+            that set us apart from traditional financial institutions.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal-up">
+            <div class="feature-icon">
+              <i class="bi bi-lightning-charge"></i>
+            </div>
+            <h3 class="card-title">Lightning-fast processing</h3>
+            <p class="card-text">
+              Transactions complete in seconds rather than days. No more waiting
+              for clearance.
+            </p>
+          </div>
+
+          <div class="feature-card reveal-up">
+            <div class="feature-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h3 class="card-title">Seamless online experience</h3>
+            <p class="card-text">
+              Intuitive interface works across all devices. Banking that fits
+              your lifestyle.
+            </p>
+          </div>
+
+          <div class="feature-card reveal-up">
+            <div class="feature-icon">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <h3 class="card-title">Time and money-saving capabilities</h3>
+            <p class="card-text">
+              Skip the paperwork and bureaucracy. Bank efficiently from
+              anywhere.
+            </p>
+          </div>
+
+          <div class="feature-card reveal-up">
+            <div class="feature-icon">
+              <i class="bi bi-percent"></i>
+            </div>
+            <h3 class="card-title">Lowest transaction fees</h3>
+            <p class="card-text">
+              Our fees are a fraction of traditional banks. Save on every
+              transaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unbeatable Transaction Fees Section -->
+    <section class="section section-fees">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="title reveal-up">Unbeatable Transaction Fees</h2>
+          <p class="subtitle reveal-up">
+            Our competitors charge up to 5% for crypto and $100+ for
+            international fiat transfers. With GTP, your money stays yours.
+          </p>
+        </div>
+
+        <div class="fee-grid reveal-up">
+          <div class="fee-card">
+            <div style="font-size: 4rem; font-weight: 700; margin-bottom: 1rem">
+              0.015%
+            </div>
+            <h3
+              style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem"
+            >
+              Max Crypto Fee
+            </h3>
+            <p style="font-size: 1.125rem; opacity: 0.9">
+              Incredibly low fees for all cryptocurrency transactions
+            </p>
+          </div>
+
+          <div class="fee-card fee-card-secondary">
+            <div style="font-size: 4rem; font-weight: 700; margin-bottom: 1rem">
+              $60
+            </div>
+            <h3
+              style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem"
+            >
+              Max Fiat Fee
+            </h3>
+            <p style="font-size: 1.125rem; opacity: 0.9">
+              Capped transaction costs for traditional currency transfers
+            </p>
+          </div>
+
+          <div class="fee-card fee-card-tertiary">
+            <div style="font-size: 4rem; font-weight: 700; margin-bottom: 1rem">
+              40%
+            </div>
+            <h3
+              style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem"
+            >
+              Average Savings
+            </h3>
+            <p style="font-size: 1.125rem; opacity: 0.9">
+              Typical customer savings compared to traditional banks
+            </p>
+          </div>
+        </div>
+
+        <div class="currency-card text-center reveal-up">
+          <h3 class="card-title mb-4" style="color: #dc2626">
+            Compare with Competitors
+          </h3>
+          <div class="comparison-grid">
+            <div class="comparison-card comparison-bad">
+              <h4 class="comparison-title">Traditional Banks</h4>
+              <ul class="comparison-list">
+                <li>• Up to 5% crypto fees</li>
+                <li>• $100+ international transfers</li>
+                <li>• 3-5 business days processing</li>
+                <li>• Hidden conversion fees</li>
+              </ul>
+            </div>
+            <div class="comparison-card comparison-good">
+              <h4 class="comparison-title">GTP Digital Banking</h4>
+              <ul class="comparison-list">
+                <li>• 0.015% maximum crypto fees</li>
+                <li>• $60 maximum fiat transfers</li>
+                <li>• Instant processing</li>
+                <li>• Transparent pricing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="title reveal-up">Benefits of GTP Digital Banking</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card reveal-up">
+            <div class="benefit-icon benefit-security">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+            <h3 class="card-title">Enhanced Security</h3>
+            <p class="card-text">
+              Military-grade encryption protecting every transaction
+            </p>
+          </div>
+
+          <div class="benefit-card reveal-up">
+            <div class="benefit-icon benefit-time">
+              <i class="bi bi-clock"></i>
+            </div>
+            <h3 class="card-title">24/7 Accessibility</h3>
+            <p class="card-text">Banking that never sleeps, just like you</p>
+          </div>
+
+          <div class="benefit-card reveal-up">
+            <div class="benefit-icon benefit-speed">
+              <i class="bi bi-lightning-charge"></i>
+            </div>
+            <h3 class="card-title">Real-time Transactions</h3>
+            <p class="card-text">No delays, no waiting periods</p>
+          </div>
+
+          <div class="benefit-card reveal-up">
+            <div class="benefit-icon benefit-tools">
+              <i class="bi bi-person-gear"></i>
+            </div>
+            <h3 class="card-title">Personalized Tools</h3>
+            <p class="card-text">Custom financial management for your needs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="text-center mb-16">
+          <h2 class="title reveal-up">How It Works</h2>
+          <p class="subtitle reveal-up">
+            Get started with GTP Digital Banking in four simple steps. It's that
+            easy.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card reveal-up">
+            <div class="step-number">1</div>
+            <h3 class="card-title">Create your GTP account</h3>
+            <p class="card-text">
+              Simple 2-minute signup process. Just need basic ID verification.
+              No paperwork.
+            </p>
+          </div>
+
+          <div class="step-card reveal-up">
+            <div class="step-number">2</div>
+            <h3 class="card-title">Link currencies</h3>
+            <p class="card-text">
+              Connect your preferred fiat or crypto accounts. Interface with
+              your existing wallets.
+            </p>
+          </div>
+
+          <div class="step-card reveal-up">
+            <div class="step-number">3</div>
+            <h3 class="card-title">Initiate transfers</h3>
+            <p class="card-text">
+              Send money anywhere globally. Pay bills or make purchases
+              directly.
+            </p>
+          </div>
+
+          <div class="step-card reveal-up">
+            <div class="step-number">4</div>
+            <h3 class="card-title">Enjoy the benefits</h3>
+            <p class="card-text">
+              Experience near-instant processing. Save with our industry-leading
+              low fees.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join the Future Section -->
+    <section class="section section-gradient">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="title reveal-up" style="color: white">
+            Join the Future of Banking with GTP
+          </h2>
+
+          <div class="future-grid mb-12">
+            <div class="future-card reveal-up">
+              <span class="future-emoji">🚀</span>
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Revolutionize
+              </h3>
+              <p style="opacity: 0.9">
+                Transform how you handle money across borders and currencies.
+              </p>
+            </div>
+
+            <div class="future-card reveal-up">
+              <span class="future-emoji">⚡</span>
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Experience
+              </h3>
+              <p style="opacity: 0.9">
+                Enjoy unmatched speed and significant cost savings.
+              </p>
+            </div>
+
+            <div class="future-card reveal-up">
+              <span class="future-emoji">🌐</span>
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Access
+              </h3>
+              <p style="opacity: 0.9">
+                Connect to a worldwide network of financial options.
+              </p>
+            </div>
+
+            <div class="future-card reveal-up">
+              <span class="future-emoji">✨</span>
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Start Today
+              </h3>
+              <p style="opacity: 0.9">
+                Begin your journey to smarter, faster, cheaper banking.
+              </p>
+            </div>
+          </div>
+
+          <div class="reveal-up">
+            <a href="#contact" class="cta-button">
+              <span>Join the Revolution</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -1744,19 +2935,18 @@
 
     // Initialize theme
     function initTheme() {
-      const savedTheme = localStorage.getItem("theme");
-      const html = document.documentElement;
-      const icon = document.getElementById("toggle-mode-icon");
+  const savedTheme = localStorage.getItem("theme");
+  const html = document.documentElement;
+  const icon = document.getElementById("toggle-mode-icon");
 
-      if (savedTheme === "light") {
-        html.classList.remove("tw-dark");
-        icon.className = "bi bi-moon";
-      } else {
-        html.classList.add("tw-dark");
-        icon.className = "bi bi-sun";
-      }
-    }
-
+  if (savedTheme === "dark") {
+    html.classList.add("tw-dark");
+    icon.className = "bi bi-sun";
+  } else {
+    html.classList.remove("tw-dark");
+    icon.className = "bi bi-moon";
+  }
+}
     // Header toggle for mobile
     function toggleHeader() {
       const header = document.getElementById("collapsed-header-items");
@@ -1814,10 +3004,6 @@
           if (isOpen) {
             dropdownList.style.transform = "scale(0)";
             dropdownList.style.opacity = "0";
-            dropdownList.setAttribute("data-open", "false");
-          } else {
-            dropdownList.style.transform = "scale(1)";
-            dropdownList.style.opacity = "1";
             dropdownList.setAttribute("data-open", "true");
           }
         });
